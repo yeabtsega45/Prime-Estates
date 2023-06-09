@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
+const authController = require("./controllers/authController");
 
 const app = express();
 const connectDb = async () => {
@@ -14,6 +15,8 @@ const connectDb = async () => {
   }
 };
 connectDb();
+
+app.use("auth", authController);
 
 app.listen(process.env.PORT, () =>
   console.log("server has been started successfully!")
