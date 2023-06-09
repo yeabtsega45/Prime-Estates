@@ -16,6 +16,10 @@ const connectDb = async () => {
 };
 connectDb();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors());
+
 app.use("auth", authController);
 
 app.listen(process.env.PORT, () =>
