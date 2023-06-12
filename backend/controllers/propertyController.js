@@ -109,3 +109,17 @@ propertyController.get("/find/:id", async (req, res) => {
     return res.status(500).json(error);
   }
 });
+
+// create estate
+propertyController.post("/", verifyToken, async (req, res) => {
+  try {
+    const newProperty = await Property.create({
+      ...req.body,
+      currentOwner: req.user.id,
+    });
+
+    return res.status(201).json(newProperty);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+});
