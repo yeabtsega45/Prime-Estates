@@ -48,3 +48,18 @@ propertyController.get("/find", async (req, res) => {
     return res.status(500).json(error);
   }
 });
+
+// TODO FETCH TYPE OF PROPERTIES. EX: {BEACH: 34, MOUNTAIN: 23}
+propertyController.get("/find/types", async (req, res) => {
+  try {
+    const beachType = await Property.countDocuments({ type: "beach" });
+    const mountainType = await Property.countDocuments({ type: "mountain" });
+    const villageType = await Property.countDocuments({ type: "village" });
+
+    return res
+      .status(200)
+      .json({ beach: beachType, mountain: mountainType, village: villageType });
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+});
