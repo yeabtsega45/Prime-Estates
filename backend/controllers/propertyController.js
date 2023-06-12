@@ -64,7 +64,7 @@ propertyController.get("/find/types", async (req, res) => {
   }
 });
 
-// get individual properties
+// fetch my properties
 propertyController.get("/find/my-properties", verifyToken, async (req, res) => {
   try {
     const properties = await Property.find({ currentOwner: req.user.id });
@@ -91,3 +91,21 @@ propertyController.get(
     }
   }
 );
+
+// get individual properties
+propertyController.get("/find/:id", async (req, res) => {
+  try {
+    const property = await Property.findById(req.params.id).populate(
+      "currentOwner",
+      "-password"
+    );
+
+    if (!property) {
+      throw new Error("No such property with that id");
+    } else {
+      return res.status(200).json(property);
+    }
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+});
