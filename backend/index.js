@@ -20,8 +20,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use("auth", authController);
+app.use("/auth", authController);
 
 app.listen(process.env.PORT, () =>
-  console.log("server has been started successfully!")
+  console.log("server has been started successfully!", process.env.PORT)
 );
