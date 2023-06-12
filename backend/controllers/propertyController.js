@@ -31,3 +31,20 @@ propertyController.get("/find/featured", async (req, res) => {
     return res.status(500).json(error);
   }
 });
+
+// get all from type
+propertyController.get("/find", async (req, res) => {
+  const type = req.query;
+  let properties = [];
+  try {
+    if (type) {
+      properties = await Property.find(type).populate("owner", "-password");
+    } else {
+      properties = await Property.find({});
+    }
+
+    return res.status(200).json(properties);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+});
