@@ -49,7 +49,7 @@ propertyController.get("/find", async (req, res) => {
   }
 });
 
-// TODO FETCH TYPE OF PROPERTIES. EX: {BEACH: 34, MOUNTAIN: 23}
+// GET COUNTS OF TYPE OF PROPERTIES. EX: {BEACH: 34, MOUNTAIN: 23}
 propertyController.get("/find/types", async (req, res) => {
   try {
     const beachType = await Property.countDocuments({ type: "beach" });
@@ -74,3 +74,20 @@ propertyController.get("/find/my-properties", verifyToken, async (req, res) => {
     console.error(error);
   }
 });
+
+// fetch bookmarked yachts
+propertyController.get(
+  "/find/bookmarked-properties",
+  verifyToken,
+  async (req, res) => {
+    try {
+      const properties = await Property.find({
+        bookmarkedUsers: { $in: [req.user.id] },
+      });
+
+      return res.status(200).json(properties);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+);
