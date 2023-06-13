@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
 const authController = require("./controllers/authController");
+const propertyController = require("./controllers/propertyController");
 
 const app = express();
 const connectDb = async () => {
@@ -21,7 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.use("/auth", authController);
+app.use("/property", propertyController);
 
 app.listen(process.env.PORT, () =>
-  console.log("server has been started successfully!", process.env.PORT)
+  console.log("server has been started successfully!")
 );
