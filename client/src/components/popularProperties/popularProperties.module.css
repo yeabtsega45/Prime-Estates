@@ -1,0 +1,13 @@
+.container {
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    margin-top: 10rem;
+  }
+  
+  .wrapper {
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
