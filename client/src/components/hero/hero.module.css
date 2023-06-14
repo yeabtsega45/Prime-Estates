@@ -64,3 +64,28 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+.options > .searchIcon{
+    padding: 0.6rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(7, 3, 73) 0%, rgb(14, 14, 132) 35%, rgb(32, 97, 219) 100%);
+    fill: #fff;
+    cursor: pointer;
+}
+
+/* RESPONSIVEE */
+@media only screen and (max-width: 768px) {
+    .wrapper > h2{
+        font-size: 40px;
+    }
+    
+    .wrapper > h5{
+        font-size: 30px; 
+    }
+
+    .wrapper > .options{
+        width: 90%;
+    }
+}
