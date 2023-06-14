@@ -37,7 +37,7 @@
   }
 
 
-.property {
+  .property {
     width: 30%;
     position: relative;
     padding: 1rem;
@@ -53,3 +53,29 @@
   .property:hover {
     transform: rotate(0);
   }
+
+  .properties> .property> img {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 50px 10px 50px;
+    transform: rotate(-1deg);
+    transition: 150ms all;
+    cursor: pointer;
+  }
+  
+  .properties>.property>img:hover {
+    transform: rotate(0);
+  }
+  
+  .properties>.property>img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #555;
+    width: 100%;
+    height: 100%;
+  }
+  
