@@ -104,4 +104,28 @@
   .property:hover>.quantity {
     transform: rotate(0);
   }
+
+  /* RESPONSIVEE */
+@media only screen and (max-width: 992px) {
+    .properties {
+      justify-content: center;
+    }
   
+    .properties>.property>img {
+      width: 450px;
+    }
+  
+    .property {
+      width: 50%
+    }
+  
+    .container {
+      margin-bottom: 5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .property {
+      width: 65%
+    }
+  }
