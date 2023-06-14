@@ -23,3 +23,16 @@
     font-size: 18px;
     font-weight: 500;
   }
+
+  .titles>h2 {
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .properties {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 3rem;
+  }
+  
