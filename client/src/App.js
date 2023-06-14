@@ -1,12 +1,21 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Hero from "./components/hero/Hero";
+import PopularProperties from "./components/popularProperties/PopularProperties";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <PopularProperties />
+            </>
+          }
+        />
         <Route path="/properties" element={<></>} />
         <Route path="/propertyDetail:id" element={<></>} />
         <Route path="/signup" element={<></>} />
