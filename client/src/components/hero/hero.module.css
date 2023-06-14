@@ -16,3 +16,41 @@
     align-items: center;
     justify-content: center;
 }
+
+.wrapper > h2{
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    margin-bottom: 2.5rem;
+}
+
+.wrapper > h5{
+    color: #efefef;
+    font-size: 36px; 
+    margin-bottom: 3rem;
+}
+
+.wrapper > .options{
+    width: 70%;
+    background-color: #fff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options > select{
+    height: 40px;
+    min-width: 160px;
+    max-width: 200px;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.75rem;
+    background-color: blue;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
