@@ -54,3 +54,13 @@
     font-size: 18px;
     cursor: pointer;
 }
+
+.options > select:first-child{
+    color: #fff;
+}
+
+.options > .rangeInput{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
