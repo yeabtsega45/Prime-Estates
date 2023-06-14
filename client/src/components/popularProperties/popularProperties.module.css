@@ -78,4 +78,30 @@
     width: 100%;
     height: 100%;
   }
+
+  .property>h5 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .property>.quantity {
+    position: absolute;
+    bottom: 5rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 20px;
+    background-color: #0303ce;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    transform: rotate(-1deg);
+    transition: 150ms all;
+  }
+  
+  
+  .property:hover>.quantity {
+    transform: rotate(0);
+  }
   
