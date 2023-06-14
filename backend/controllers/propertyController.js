@@ -35,7 +35,7 @@ propertyController.get("/find", async (req, res) => {
   let properties = [];
   try {
     if (type) {
-      properties = await Property.find(type).populate("owner", "-password");
+      properties = await Property.find(type);
     } else {
       properties = await Property.find({});
     }
@@ -176,7 +176,7 @@ propertyController.delete("/:id", verifyToken, async (req, res) => {
       throw new Error("You are not allowed to delete other people properties");
     }
 
-    await property.delete();
+    await property.deleteOne();
 
     return res.status(200).json({ msg: "Successfully deleted property" });
   } catch (error) {
