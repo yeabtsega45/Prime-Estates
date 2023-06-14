@@ -35,4 +35,21 @@
     flex-wrap: wrap;
     grid-gap: 3rem;
   }
+
+
+.property {
+    width: 30%;
+    position: relative;
+    padding: 1rem;
+    transform: rotate(-1deg);
+    border-radius: 10px 50px 10px 50px;
+    box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: 150ms all;
+  }
   
+  .property:hover {
+    transform: rotate(0);
+  }
