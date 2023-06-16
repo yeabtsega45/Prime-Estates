@@ -46,3 +46,14 @@
 .wrapper > .inputContainer:focus-within{
     border-color: #777;
 }
+
+.wrapper > .inputContainer > input{
+    border: none;
+    outline: none;
+    padding-left: 0.5rem;
+}
+  
+.wrapper > .inputContainer > .sendIcon{
+    margin-right: 0.5rem;
+    font-size: 20px;
+}
