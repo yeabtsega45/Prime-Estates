@@ -17,7 +17,7 @@ const PopularProperties = () => {
     const fetchPropertiesNumber = async () => {
       try {
         const data = await request("/property/find/types", "GET");
-
+        console.log(data);
         setBeachProperties(data.beach);
         setMountainProperties(data.mountain);
         setVillageProperties(data.village);

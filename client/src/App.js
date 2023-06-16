@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Hero from "./components/hero/Hero";
+import Newsletter from "./components/newsletter/Newsletter";
 import PopularProperties from "./components/popularProperties/PopularProperties";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <>
               <Hero />
               <PopularProperties />
+              <Newsletter />
             </>
           }
         />
