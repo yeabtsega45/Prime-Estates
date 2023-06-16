@@ -22,12 +22,12 @@ footer {
 .col>h2 {
     margin-bottom: 15px;
     justify-self: flex-start;
-    margin-left: -5px;
+    margin-left: 5px;
 }
 
 .col>p {
     max-width: 425px;
-    color: #555;
+    /* color: #555; */
     font-size: 15px;
 }
 

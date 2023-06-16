@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./components/hero/Hero";
 import Newsletter from "./components/newsletter/Newsletter";
 import PopularProperties from "./components/popularProperties/PopularProperties";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Hero />
               <PopularProperties />
               <Newsletter />
+              <Footer />
             </>
           }
         />
