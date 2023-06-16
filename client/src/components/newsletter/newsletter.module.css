@@ -12,3 +12,21 @@
     flex-direction: column;
     align-items: center;
 }
+
+.titles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.titles>h5 {
+    color: #777;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.titles>h2 {
+    color: #333;
+    font-size: 28px;
+}
