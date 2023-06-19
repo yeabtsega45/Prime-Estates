@@ -108,3 +108,19 @@ form>p>a {
     align-items: center;
 }
 
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+    .wrapper {
+        height: 60vh;
+        width: 30vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        height: 65vh;
+        width: 40vw;
+    }
+}
