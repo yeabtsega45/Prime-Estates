@@ -104,3 +104,19 @@ form>p>a {
     font-weight: 500;
 }
 
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+    .wrapper {
+        height: 60vh;
+        width: 30vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        height: 80vh;
+        width: 50vw;
+    }
+}
