@@ -230,3 +230,20 @@
     color: inherit;
 }
 
+/* RESPONSIVEE */
+@media only screen and (max-width: 992px) {
+    .listPropertyWrapper {
+        height: 95vh;
+        width: 60vw;
+    }
+
+    .listPropertyWrapper button {
+        margin-top: 0;
+    }
+
+    .listPropertyWrapper>h2 {
+        margin: 1.75rem 0;
+        margin-bottom: 2rem;
+    }
+}
+
