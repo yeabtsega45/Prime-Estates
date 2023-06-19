@@ -6,6 +6,7 @@ import PopularProperties from "./components/popularProperties/PopularProperties"
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Signup from "./components/signup/Signup";
+import Signin from "./components/signin/Signin";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="/properties" element={<></>} />
         <Route path="/propertyDetail:id" element={<></>} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/signin" element={<></>} />
+        <Route path="/signin" element={<Signin />} />
       </Routes>
     </>
   );
