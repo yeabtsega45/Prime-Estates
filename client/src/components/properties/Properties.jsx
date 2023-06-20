@@ -27,23 +27,26 @@ const Properties = () => {
   }, []);
 
   // parsing query params
-  useEffect(() => {
-    if (arrQuery && allProperties?.length > 0 && state === null) {
-      let formattedQuery = {};
-      arrQuery.forEach((option, idx) => {
-        const key = option.split("=")[0];
-        const value = option.split("=")[1];
+  useEffect(
+    (handleSearch, state) => {
+      if (arrQuery && allProperties?.length > 0 && state === null) {
+        let formattedQuery = {};
+        arrQuery.forEach((option, idx) => {
+          const key = option.split("=")[0];
+          const value = option.split("=")[1];
 
-        formattedQuery = { ...formattedQuery, [key]: value };
+          formattedQuery = { ...formattedQuery, [key]: value };
 
-        // if we are on the last index, assign the formattedQuery obj to state
-        if (idx === arrQuery.length - 1) {
-          setState((prev) => formattedQuery);
-          handleSearch(formattedQuery);
-        }
-      });
-    }
-  }, [allProperties, arrQuery]);
+          // if we are on the last index, assign the formattedQuery obj to state
+          if (idx === arrQuery.length - 1) {
+            setState((prev) => formattedQuery);
+            handleSearch(formattedQuery);
+          }
+        });
+      }
+    },
+    [allProperties, arrQuery]
+  );
 
   const handleState = (e) => {
     setState((prev) => {
@@ -73,6 +76,7 @@ const Properties = () => {
       ) {
         return property;
       }
+      return null;
     });
 
     const queryStr = `type=${options.type}&continent=${options.continent}&priceRange=${options.priceRange}`;
