@@ -221,3 +221,13 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+    .contactFormWrapper {
+        height: 75vh;
+        width: 50vw;
+    }
+
+    .contactOwner {
+        width: 150px;
+    }
+}
