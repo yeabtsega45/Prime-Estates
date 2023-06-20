@@ -1,0 +1,31 @@
+.container {
+    height: 100%;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.wrapper {
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.titles {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.titles>h5 {
+    color: #777;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.titles>h2 {
+    color: #333;
+    font-size: 28px;
+}
+
