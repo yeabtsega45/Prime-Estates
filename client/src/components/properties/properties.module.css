@@ -110,3 +110,21 @@
     color: #222;
 }
 
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+    .wrapper>.options{
+        width: 90%;
+        padding: 0.75rem 1rem;
+        margin: 0 auto;
+    }
+
+    .properties{
+       justify-content: center;
+    }
+}
+
+
+/* @media only screen and (max-width: 768px) {
+    
+} */
