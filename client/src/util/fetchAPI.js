@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://real-estate-api-0ox2.onrender.com";
 
 export const request = async (
   url,

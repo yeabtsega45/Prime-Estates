@@ -6,7 +6,7 @@ import { login } from "../../redux/authSlice";
 import { request } from "../../util/fetchAPI";
 import classes from "./signin.module.css";
 
-const Signup = () => {
+const Signin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
@@ -76,4 +76,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Signin;

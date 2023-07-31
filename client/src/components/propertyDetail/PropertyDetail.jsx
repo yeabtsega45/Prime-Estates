@@ -84,7 +84,7 @@ const PropertyDetail = () => {
       <div className={classes.wrapper}>
         <div className={classes.left}>
           <img
-            src={`http://localhost:5000/images/${propertyDetail?.img}`}
+            src={`https://real-estate-api-0ox2.onrender.com/images/${propertyDetail?.img}`}
             alt=""
           />
         </div>
@@ -118,7 +118,7 @@ const PropertyDetail = () => {
                 Owner:{" "}
                 {propertyDetail?.currentOwner?.profileImg ? (
                   <img
-                    src={`http://localhost:5000/images/${propertyDetail?.currentOwner?.profileImg}`}
+                    src={`https://real-estate-api-0ox2.onrender.com/images/${propertyDetail?.currentOwner?.profileImg}`}
                     alt=""
                     className={classes.owner}
                   />
