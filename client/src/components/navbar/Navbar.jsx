@@ -115,7 +115,7 @@ const Navbar = () => {
     <div className={`${classes.container} ${isScrolled && classes.scrolled}`}>
       <div className={classes.wrapper}>
         <Link to="/" onClick={scrollToTop} className={classes.left}>
-          Real Estate <BsHouseDoor />
+          Prime Estates <BsHouseDoor />
         </Link>
         <ul className={classes.center}>
           <li onClick={scrollToTop} className={classes.listItem}>
