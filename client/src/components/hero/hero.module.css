@@ -78,14 +78,24 @@
 /* RESPONSIVEE */
 @media only screen and (max-width: 768px) {
     .wrapper > h2{
-        font-size: 40px;
+        font-size: 30px;
     }
     
     .wrapper > h5{
-        font-size: 30px; 
+        font-size: 20px; 
     }
 
     .wrapper > .options{
-        width: 90%;
+        width: 100%;
     }
+
+    /* .options > .searchIcon{
+        padding: 0.6rem;
+        width: 20px;
+        height: 20px;
+        border-radius: none;
+        background: none;
+        fill: blue;
+        cursor: pointer;
+    } */
 }

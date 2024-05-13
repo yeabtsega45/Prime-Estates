@@ -281,6 +281,11 @@
         font-size: 26px;
     }
 
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+
     .center>input {
         background-color: transparent;
     }
