@@ -46,6 +46,25 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/contacts"
+          element={
+            <>
+              <Navbar />
+              <Newsletter />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <>
+              <Navbar />
+              <Footer />
+            </>
+          }
+        />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
       </Routes>

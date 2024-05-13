@@ -54,6 +54,7 @@
 .center>.listItem {
     color: #222;
     transition: 150ms all ease-in-out;
+    text-decoration: none;
 }
 
 .center>.listItem:hover {

@@ -121,14 +121,14 @@ const Navbar = () => {
           <Link to="/" onClick={scrollToTop} className={classes.listItem}>
             Home
           </Link>
-          <Link to="/" className={classes.listItem}>
-            About
+          <Link to="/properties" className={classes.listItem}>
+            Properties
           </Link>
-          <Link to="/" className={classes.listItem}>
-            Featured
-          </Link>
-          <Link to="/" className={classes.listItem}>
+          <Link to="/contacts" className={classes.listItem}>
             Contacts
+          </Link>
+          <Link to="/about" className={classes.listItem}>
+            About
           </Link>
         </ul>
         <div className={classes.right}>
