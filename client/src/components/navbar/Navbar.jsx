@@ -118,12 +118,18 @@ const Navbar = () => {
           Prime Estates <BsHouseDoor />
         </Link>
         <ul className={classes.center}>
-          <li onClick={scrollToTop} className={classes.listItem}>
+          <Link to="/" onClick={scrollToTop} className={classes.listItem}>
             Home
-          </li>
-          <li className={classes.listItem}>About</li>
-          <li className={classes.listItem}>Featured</li>
-          <li className={classes.listItem}>Contacts</li>
+          </Link>
+          <Link to="/" className={classes.listItem}>
+            About
+          </Link>
+          <Link to="/" className={classes.listItem}>
+            Featured
+          </Link>
+          <Link to="/" className={classes.listItem}>
+            Contacts
+          </Link>
         </ul>
         <div className={classes.right}>
           {!user ? (

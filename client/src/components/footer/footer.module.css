@@ -23,11 +23,11 @@ footer {
     margin-bottom: 15px;
     justify-self: flex-start;
     margin-left: 5px;
+    color: #005ea2;
 }
 
 .col>p {
     max-width: 425px;
-    /* color: #555; */
     font-size: 15px;
 }
 
